@@ -1,6 +1,8 @@
 'use strict';
 
-const io = require('socket.io')(process.env.PORT);
+const PORT = process.env.PORT || 3000;
+
+const io = require('socket.io')(PORT);
 
 io.on('connection', socket => {
   console.log('Connected', socket.id);
