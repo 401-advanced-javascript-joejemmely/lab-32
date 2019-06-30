@@ -1,8 +1,15 @@
 'use strict';
 
+const express = require('express');
+const socketIO = require('socket.io');
+
 const PORT = process.env.PORT || 3000;
 
-const io = require('socket.io')(PORT);
+const server = express().listen(PORT, () =>
+  console.log(`Listening on ${PORT}`)
+);
+
+const io = socketIO(server);
 
 io.on('connection', socket => {
   console.log('Connected', socket.id);
