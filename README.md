@@ -5,12 +5,12 @@
 ### Author: Joé Jemmely
 
 ### Links and Resources
-* [back-end](http://xyz.com) (when applicable)
-* [front-end](http://xyz.com) (when applicable)
+* [back-end](http://xyz.com)
+* [CodeSandbox](https://codesandbox.io/embed/lab-32-qcl9v)
 
 ### Setup
 #### `.env` requirements
-* `URL` - Port Number
+* `URL` - URL of the backend
 
 #### UML
 Coming soon
