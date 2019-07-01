@@ -1,0 +1,38 @@
+@startuml lab-32
+
+class App{
+}
+
+class Form{
+  ==methods==
+  +handleSubmit()
+  +handleNewWords()
+}
+
+class Words{
+}
+
+class useChat{
+}
+
+
+class ChatContextProvider {
+  ==state==
+  # typedInput:String
+  # words:Array
+  # add:function
+  # submit:function
+  ==methods==
+  +submit()
+  +updateWords()
+  +add()
+}
+
+
+App --* Form
+App --* Words
+Words --* useChat
+Form --* useChat
+useChat <--> ChatContextProvider
+
+@enduml
