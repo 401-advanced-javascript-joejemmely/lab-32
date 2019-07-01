@@ -6,7 +6,7 @@
 
 ### Links and Resources
 
-- [back-end](http://xyz.com)
+- [back-end](https://lab-32.herokuapp.com/)
 - [CodeSandbox](https://codesandbox.io/embed/lab-32-qcl9v)
 
 ### Setup
